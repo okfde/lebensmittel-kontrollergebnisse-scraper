@@ -10,6 +10,6 @@ git -C results/ commit -m "Reports from $DATE" -a
 git -C results/ push origin master
 
 git add results
-git commit -m "ci: update reports submodule"
+git commit -m "chore(ci): update reports submodule"
 remote_repo="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 git push "${remote_repo}" master
