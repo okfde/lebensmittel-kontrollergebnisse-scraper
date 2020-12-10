@@ -7,9 +7,6 @@ git config --local user.name "GitHub Action"
 git submodule init 
 git submodule update
 
-git -C results/ status
-git -C results/ remote -v
-exit
 git -C results/ add .
 git -C results/ commit -m "Reports from $DATE" -a
 git -C results/ push origin master
