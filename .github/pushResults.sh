@@ -1,11 +1,6 @@
 #!/bin/bash
 
 DATE=$(date '+%F')
-git config --local user.email "action@github.com"
-git config --local user.name "GitHub Action"
-
-git submodule init 
-git submodule update
 
 git -C results/ add .
 git -C results/ commit -m "Reports from $DATE" -a
