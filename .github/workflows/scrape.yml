@@ -21,8 +21,8 @@ jobs:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
       - run: yarn install
-      - name: Scrape
-        run: yarn scrape
+      #- name: Scrape
+      #  run: yarn scrape
       - name: Install SSH key
         uses: shimataro/ssh-key-action@v2
         with:
