@@ -2,4 +2,6 @@ node_modules
 *.log
 .DS_Store
 Thumbs.db
+.venv
+.ipynb_checkpoints
 .vscode
